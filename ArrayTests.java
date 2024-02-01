@@ -30,4 +30,8 @@ public class ArrayTests {
     assertArrayEquals(new int[] {2, 4, 19, 9, 5}, input1);
     assertArrayEquals(new int[] {4, 3, 2, 1}, input2);
   }
+  @Test public void testAverageWithoutLowest() {
+    double[] input1 = {1, 1, 2, 9, 24};
+    assertEquals("checK", ArrayExamples.averageWithoutLowest(input1), 9.0, 0.01);
+  }
 }
